@@ -1,0 +1,178 @@
+2020-04-25 06:51:07 [INFO] RC:RC listening on /127.0.0.1:5000
+2020-04-25 06:51:07 [INFO] MessageNIOTransport:RC:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:5000] with ssl mode CLEAR
+2020-04-25 06:51:08 [INFO] MLog clients using java 1.4+ standard logging.
+2020-04-25 06:51:08 [INFO] Initializing c3p0-0.9.5 [built 02-January-2015 13:25:04 -0500; debug? true; trace: 10]
+2020-04-25 06:51:08 [INFO] Attempting getDefaultConn() to DB jdbc:derby:/tmp/gigapaxos/reconfiguration_DB/reconfiguration_DBRC
+2020-04-25 06:51:08 [INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> true, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kflta91d3mlq7zz212x|6ca8564a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.apache.derby.jdbc.EmbeddedDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> z8kflta91d3mlq7zz212x|6ca8564a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:derby:/tmp/gigapaxos/reconfiguration_DB/reconfiguration_DBRC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2020-04-25 06:51:08 [INFO] Connected to and created database reconfiguration_DBRC
+2020-04-25 06:51:08 [INFO] Table checkpointRC already exists
+2020-04-25 06:51:08 [INFO] Table checkpointRC already exists
+2020-04-25 06:51:08 [INFO] Table demandRC already exists
+2020-04-25 06:51:08 [INFO] Table nodeconfigRC already exists
+2020-04-25 06:51:08 [INFO] DerbyRCDBRC created (or exists) tables [checkpointRC, messagesRC, demandRC, nodeconfigRC]
+2020-04-25 06:51:08 [INFO] DerbyRCDBRC proceeding with node config version AR:/127.0.0.1:2000 
+RC:/127.0.0.1:5000 : 
+2020-04-25 06:51:09 [INFO] DerbyRCDBRC initializing with RC records in DB = 
+2020-04-25 06:51:09 [INFO] JSONMessengerRC starting worker with ssl mode CLEAR
+2020-04-25 06:51:09 [INFO] MessageNIOTransport:null:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:61985] with ssl mode CLEAR
+2020-04-25 06:51:09 [INFO] JournalerRC created new log file /tmp/gigapaxos/paxos_logs/paxos_journal.RC/log.RC.171b0f661b1
+2020-04-25 06:51:09 [INFO] SQLPaxosLoggerRC attempting getCursorConn() to db jdbc:derby:/tmp/gigapaxos/paxos_logs/paxos_dbRC
+2020-04-25 06:51:09 [INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> true, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kflta91d3mlq7zz212x|2b30a42c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.apache.derby.jdbc.EmbeddedDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceUseNamedDriverClass -> false, identityToken -> z8kflta91d3mlq7zz212x|2b30a42c, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:derby:/tmp/gigapaxos/paxos_logs/paxos_dbRC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2020-04-25 06:51:09 [INFO] SQLPaxosLoggerRC connected to and created database paxos_dbRC
+2020-04-25 06:51:09 [INFO] Table checkpointRC already exists
+2020-04-25 06:51:09 [INFO] Table messagesRC already exists
+2020-04-25 06:51:09 [INFO] Table messagesRC already exists
+2020-04-25 06:51:09 [INFO] Table pauseRC already exists
+2020-04-25 06:51:09 [INFO] Table prev_checkpointRC already exists
+2020-04-25 06:51:09 [INFO] Created tables checkpointRC and messagesRC and pauseRC
+2020-04-25 06:51:09 [INFO] SQLPaxosLoggerRC : CHECKPOINTRC : STATE : 32672
+2020-04-25 06:51:09 [INFO] SQLPaxosLoggerRC : MESSAGESRC : MESSAGE : 5242880
+2020-04-25 06:51:09 [INFO] PaxosManager:RC beginning to recover checkpoints
+2020-04-25 06:51:09 [INFO] RC initialized paxos coordinator RC:0 with members [2609]; PaxosAcceptor:RC null {recovered_state=[{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["RC"],"EPOCH":0,"[...]_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"AR_RC_NODES"}]}
+2020-04-25 06:51:09 [INFO] RC initialized paxos coordinator RC_NODES:0 with members [2609]; PaxosAcceptor:RC null {recovered_state=[{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["RC"],"EPOCH":0,"[...]RC_EPOCH_MAP":[{"RC_NODE":"RC","RC_EPOCH":0}],"NAME":"RC_NODES"}]}
+2020-04-25 06:51:09 [INFO] RC initialized paxos coordinator AR_NODES:0 with members [2609]; PaxosAcceptor:RC null {recovered_state=[{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["AR"],"EPOCH":0,"[...]N_ACTIVES_CHANGE":"DEFAULT","RC_EPOCH_MAP":[],"NAME":"AR_NODES"}]}
+2020-04-25 06:51:09 [INFO] PaxosManager:RC has recovered checkpoints for 3 paxos groups
+2020-04-25 06:51:09 [INFO] PaxosManager:RC beginning to roll forward logged messages
+2020-04-25 06:51:09 [INFO] SQLPaxosLoggerRC found 0 instances unpaused before last shutdown
+2020-04-25 06:51:09 [INFO] SQLPaxosLoggerRC rolling forward logged messages from logfile /tmp/gigapaxos/paxos_logs/paxos_journal.RC/log.RC.171b0f422f6 onwards
+2020-04-25 06:51:09 [WARNING] Config unable to find file testing.properties; using default values for type class edu.umass.cs.gigapaxos.testing.TESTPaxosConfig$TC
+2020-04-25 06:51:09 [INFO] ==============================> DerbyRCDBRC [] -> deepspeech_orig_xdn_Alvin:-1 READY [AR] 
+2020-04-25 06:51:09 [INFO] ==============================> DerbyRCDBRC deepspeech_orig_xdn_Alvin -1:READY -> -1:WAIT_ACK_STOP [AR]
+2020-04-25 06:51:10 [INFO] DerbyRCDBRC successfully handled deepspeech_orig_xdn_Alvin:0:RECONFIGURATION_INTENT; record = deepspeech_orig_xdn_Alvin:-1:WAIT_ACK_STOPnull 
+2020-04-25 06:51:10 [INFO] ==============================> DerbyRCDBRC deepspeech_orig_xdn_Alvin -1:WAIT_ACK_STOP -> 0:READY_READY [AR]  
+2020-04-25 06:51:10 [INFO] DerbyRCDBRC successfully handled deepspeech_orig_xdn_Alvin:0:RECONFIGURATION_COMPLETE; record = deepspeech_orig_xdn_Alvin:0:READY_READY[AR] 
+2020-04-25 06:51:10 [INFO] JournalerRC rolling forward logged messages from file /tmp/gigapaxos/paxos_logs/paxos_journal.RC/log.RC.171b0f661b1
+2020-04-25 06:51:10 [INFO] PaxosManager:RC rolled forward 4 messages total across 3 paxos groups
+2020-04-25 06:51:10 [INFO] PaxosManager:RC recovered paxos instance RC:RC:0:[A:(0:2609, 3)]PaxosAcceptor:RC; isActive = true 
+2020-04-25 06:51:10 [INFO] PaxosManager:RC recovered paxos instance RC:RC_NODES:0:[A:(0:2609, 1)]PaxosAcceptor:RC; isActive = true 
+2020-04-25 06:51:10 [INFO] PaxosManager:RC recovered paxos instance RC:AR_NODES:0:[A:(0:2609, 1)]PaxosAcceptor:RC; isActive = true 
+2020-04-25 06:51:10 [INFO] ------------------PaxosManager:RC recovery complete-------------------
+2020-04-25 06:51:10 [INFO] PaxosManager:RC creating client messenger at /127.0.0.1:5100; (offset=100)
+2020-04-25 06:51:10 [INFO] MessageNIOTransport:null:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/127.0.0.1:5100] with ssl mode CLEAR
+2020-04-25 06:51:10 [INFO] RepliconfigurableReconfiguratorDB:RC created reconfigurator group RC with members [RC]: {"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["RC"],"EPOCH":0,"NEW_ACTIVES":["RC"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"DEFAULT","RC_EPOCH_MAP":[],"NAME":"RC"}
+{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["AR"],"EPOCH":0,"NEW_ACTIVES":["AR"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"XDNApp0"}
+{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["AR"],"EPOCH":0,"NEW_ACTIVES":["AR"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"AR_AR_NODES"}
+{"NUM_UNCLEAN":0,"RC_STATE":"READY","ACTIVES":["AR"],"EPOCH":0,"NEW_ACTIVES":["AR"],"RECONFIGURE_UPON_ACTIVES_CHANGE":"REPLICATE_ALL","RC_EPOCH_MAP":[],"NAME":"AR_RC_NODES"}
+2020-04-25 06:51:10 [INFO] RepliconfigurableReconfiguratorDB:RC after recovery has node config records = 
+RC : RC:0:READY[RC]
+RC_NODES : RC_NODES:0:READY[RC]
+AR_NODES : AR_NODES:0:READY[AR]
+2020-04-25 06:51:10 [INFO] RC.RC creating  client messenger at /127.0.0.1:5100
+2020-04-25 06:51:10 [INFO] RC.RC adding self as demultiplexer to existing  client messenger
+2020-04-25 06:51:10 [INFO] RC.RC registering types [CREATE_SERVICE_NAME, DELETE_SERVICE_NAME, REQUEST_ACTIVE_REPLICAS]
+2020-04-25 06:51:10 [INFO] RC.RC registering types [CREATE_SERVICE_NAME, ACK_DROP_EPOCH_FINAL_STATE, REQUEST_ACTIVE_REPLICAS, RECONFIGURE_RC_NODE_CONFIG, ACK_STOP_EPOCH, RECONFIGURE_ACTIVE_NODE_CONFIG, ECHO_REQUEST, ACK_START_EPOCH, RC_RECORD_REQUEST, DELETE_SERVICE_NAME, HELLO_REQUEST, DEMAND_REPORT]
+2020-04-25 06:51:10 [INFO] {0} registering types [CREATE_SERVICE_NAME, ECHO_REQUEST, DELETE_SERVICE_NAME, REPLICABLE_CLIENT_REQUEST, REQUEST_ACTIVE_REPLICAS, ACTIVE_REPLICA_ERROR] for TXUtils.GigaPaxosClient
+2020-04-25 06:51:10 [INFO] {0} registering types [RECONFIGURE_RC_NODE_CONFIG, RECONFIGURE_ACTIVE_NODE_CONFIG] for TXUtils.GigaPaxosClient
+2020-04-25 06:51:10 [INFO] TXUtils.GigaPaxosClient registering types [REPLICABLE_CLIENT_REQUEST] for TXUtils.GigaPaxosClient
+2020-04-25 06:51:10 [INFO] MessageNIOTransport:null:0 listening on channel sun.nio.ch.ServerSocketChannelImpl[/0:0:0:0:0:0:0:0:61988] with ssl mode CLEAR
+2020-04-25 06:51:10 [INFO] TXUtils.GigaPaxosClient61988 listening on /0:0:0:0:0:0:0:0:61988; ssl mode = CLEAR; client port offset = 100
+2020-04-25 06:51:10 [INFO] AR.RC maybe creating  client messenger at /127.0.0.1:5100
+2020-04-25 06:51:10 [INFO] AR.RC adding self as demultiplexer to existing  client messenger
+2020-04-25 06:51:10 [INFO] AbstractPacketDemultiplexer[4]:RC-clientFacing registering types [] for AR.RC
+2020-04-25 06:51:10 [INFO] AbstractPacketDemultiplexer[4]:RC registering types [DROP_EPOCH_FINAL_STATE, STOP_EPOCH, START_EPOCH, ECHO_REQUEST, EPOCH_FINAL_STATE, REPLICABLE_CLIENT_REQUEST, REQUEST_EPOCH_FINAL_STATE, HELLO_REQUEST] for AR.RC
+2020-04-25 06:51:10 [INFO] RC:/127.0.0.1:5000  server ready (total number of servers=2)
+2020-04-25 06:51:10 [INFO] [id: 0x4a0ef964] REGISTERED
+2020-04-25 06:51:10 [INFO] [id: 0x4a0ef964] BIND: /127.0.0.1:5300
+2020-04-25 06:51:10 [INFO] [id: 0x4a0ef964, L:/127.0.0.1:5300] ACTIVE
+2020-04-25 06:51:10 [INFO] RC.RC:HTTP:/127.0.0.1:5300 ready
+2020-04-25 06:51:24 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:61996:null:null from client /127.0.0.1:61996 
+2020-04-25 06:51:24 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:61996:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:24 [INFO] AR.RC received closest map {/127.0.0.1=75} from /127.0.0.1:61996; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:24 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:61996:null:null from client /127.0.0.1:61996 
+2020-04-25 06:51:24 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:61996:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:27 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62002:null:null from client /127.0.0.1:62002 
+2020-04-25 06:51:27 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62002:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:27 [INFO] AR.RC received closest map {/127.0.0.1=29} from /127.0.0.1:62002; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:27 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62002:null:null from client /127.0.0.1:62002 
+2020-04-25 06:51:27 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62002:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:29 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62007:null:null from client /127.0.0.1:62007 
+2020-04-25 06:51:29 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62007:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:29 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62007; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:29 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62007:null:null from client /127.0.0.1:62007 
+2020-04-25 06:51:29 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62007:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:30 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62012:null:null from client /127.0.0.1:62012 
+2020-04-25 06:51:30 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62012:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:31 [INFO] AR.RC received closest map {/127.0.0.1=11} from /127.0.0.1:62012; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:31 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62012:null:null from client /127.0.0.1:62012 
+2020-04-25 06:51:31 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62012:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:32 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62017:null:null from client /127.0.0.1:62017 
+2020-04-25 06:51:32 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62017:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:32 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62017; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:32 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62017:null:null from client /127.0.0.1:62017 
+2020-04-25 06:51:32 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62017:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:34 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62022:null:null from client /127.0.0.1:62022 
+2020-04-25 06:51:34 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62022:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:34 [INFO] AR.RC received closest map {/127.0.0.1=10} from /127.0.0.1:62022; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:34 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62022:null:null from client /127.0.0.1:62022 
+2020-04-25 06:51:34 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62022:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:36 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62029:null:null from client /127.0.0.1:62029 
+2020-04-25 06:51:36 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62029:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:36 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62029; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:36 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62029:null:null from client /127.0.0.1:62029 
+2020-04-25 06:51:36 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62029:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:59 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62038:null:null from client /127.0.0.1:62038 
+2020-04-25 06:51:59 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62038:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:51:59 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62038; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:51:59 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62038:null:null from client /127.0.0.1:62038 
+2020-04-25 06:51:59 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62038:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:01 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62043:null:null from client /127.0.0.1:62043 
+2020-04-25 06:52:01 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62043:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:01 [INFO] AR.RC received closest map {/127.0.0.1=5} from /127.0.0.1:62043; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:01 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62043:null:null from client /127.0.0.1:62043 
+2020-04-25 06:52:01 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62043:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:02 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62048:null:null from client /127.0.0.1:62048 
+2020-04-25 06:52:02 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62048:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:03 [INFO] AR.RC received closest map {/127.0.0.1=14} from /127.0.0.1:62048; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:03 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62048:null:null from client /127.0.0.1:62048 
+2020-04-25 06:52:03 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62048:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:04 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62053:null:null from client /127.0.0.1:62053 
+2020-04-25 06:52:04 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62053:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:04 [INFO] AR.RC received closest map {/127.0.0.1=5} from /127.0.0.1:62053; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:04 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62053:null:null from client /127.0.0.1:62053 
+2020-04-25 06:52:04 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62053:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:06 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62058:null:null from client /127.0.0.1:62058 
+2020-04-25 06:52:06 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62058:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:06 [INFO] AR.RC received closest map {/127.0.0.1=11} from /127.0.0.1:62058; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:06 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62058:null:null from client /127.0.0.1:62058 
+2020-04-25 06:52:06 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62058:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:07 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62063:null:null from client /127.0.0.1:62063 
+2020-04-25 06:52:07 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62063:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:07 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62063; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:07 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62063:null:null from client /127.0.0.1:62063 
+2020-04-25 06:52:07 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62063:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:09 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62068:null:null from client /127.0.0.1:62068 
+2020-04-25 06:52:09 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62068:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:09 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62068; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:09 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62068:null:null from client /127.0.0.1:62068 
+2020-04-25 06:52:09 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62068:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:11 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62073:null:null from client /127.0.0.1:62073 
+2020-04-25 06:52:11 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62073:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:11 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62073; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:11 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62073:null:null from client /127.0.0.1:62073 
+2020-04-25 06:52:11 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62073:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:12 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62078:null:null from client /127.0.0.1:62078 
+2020-04-25 06:52:12 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62078:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:12 [INFO] AR.RC received closest map {/127.0.0.1=5} from /127.0.0.1:62078; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:12 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62078:null:null from client /127.0.0.1:62078 
+2020-04-25 06:52:12 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62078:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:14 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62083:null:null from client /127.0.0.1:62083 
+2020-04-25 06:52:14 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62083:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:14 [INFO] AR.RC received closest map {/127.0.0.1=7} from /127.0.0.1:62083; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:14 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62083:null:null from client /127.0.0.1:62083 
+2020-04-25 06:52:14 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62083:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:16 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62088:null:null from client /127.0.0.1:62088 
+2020-04-25 06:52:16 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62088:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:16 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62088; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:16 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62088:null:null from client /127.0.0.1:62088 
+2020-04-25 06:52:16 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62088:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:17 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62093:null:null from client /127.0.0.1:62093 
+2020-04-25 06:52:17 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62093:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:17 [INFO] AR.RC received closest map {/127.0.0.1=6} from /127.0.0.1:62093; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:17 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62093:null:null from client /127.0.0.1:62093 
+2020-04-25 06:52:17 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62093:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:20 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62098:null:null from client /127.0.0.1:62098 
+2020-04-25 06:52:20 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:**:0:Q:/127.0.0.1:62098:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:52:20 [INFO] AR.RC received closest map {/127.0.0.1=7} from /127.0.0.1:62098; RTTEstimator.closest=[/127.0.0.1]
+2020-04-25 06:52:20 [INFO] RC.RC received  REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:Q:/127.0.0.1:62098:null:null from client /127.0.0.1:62098 
+2020-04-25 06:52:20 [INFO] RC.RC sending client RESPONSE REQUEST_ACTIVE_REPLICAS:deepspeech_orig_xdn_Alvin:0:R:/127.0.0.1:62098:[/127.0.0.1:2100]:null:null back to client
+2020-04-25 06:59:37 [INFO] PaxosManager:RC deactivated 3 idle instances [RC, AR_NODES, RC_NODES]; has 0 active instances[]; avg_pause_delay = 0us; avg_deactivation_loop_delay = 3ms; total_instances_created = 3; total_current_instances = 3

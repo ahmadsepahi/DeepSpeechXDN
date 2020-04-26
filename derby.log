@@ -1,0 +1,27 @@
+----------------------------------------------------------------
+Sat Apr 25 06:51:08 EDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0171-b0f6-5cc9-0000053dcad8 
+on database directory /private/tmp/gigapaxos/paxos_logs/paxos_dbAR with class loader sun.misc.Launcher$AppClassLoader@5c647e05 
+Loaded from file:/Users/ahmad/XDN/jars/XDN-1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=/Users/ahmad/XDN
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.4
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+base.classpath=''
+----------------------------------------------------------------
+Sat Apr 25 06:51:09 EDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a13ec033-0171-b0f6-5b65-00000690ae08 
+on database directory /private/tmp/gigapaxos/paxos_logs/paxos_dbRC with class loader sun.misc.Launcher$AppClassLoader@5c647e05 
+Loaded from file:/Users/ahmad/XDN/jars/XDN-1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=/Users/ahmad/XDN
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.4
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
